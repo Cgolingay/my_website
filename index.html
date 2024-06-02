@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="myself.css"> 
+        <link rel="stylesheet" href="mediaquerries.css">
+    </head>
+
+    <body>
+        <nav id="desktop-nav"> 
+            <div class="logo">Christine M. Golingay</div>
+            <div>
+                <div class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#music">Music</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </div>
+            </div>
+        </nav>
+
+        <nav id="hamburger-nav">
+            <div class="logo">Christine Golingay</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#project" onclick="toggleMenu()">Project</a></li>
+                    <li><a href="#music" onclick="toggleMenu()">Music</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+        </nav>
+        <script src="script.js"></script>
+    </body>
+</html>
