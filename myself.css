@@ -38,7 +38,7 @@ nav{
 }
 
 .nav-links{
-    gap: 2rem;
+    gap: 3rem;
     list-style: none;
     font-size: 1.5rem;
 }
@@ -139,15 +139,17 @@ a:hover{
 /* SECTIONS */
 
 section{
-    padding-top: 4vh;
-    height: 96vh;
-    margin: 0 10rem;
+    padding-top: 3vh;
+    height: 100vh;
+    margin: 0 8rem;
     box-sizing: border-box;
     min-height: fit-content;
 }
 
 .section-container{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* PROFILE SECTION */
@@ -158,6 +160,11 @@ section{
     gap: 5rem;
     height: 80vh;
 }
+
+/* #about{
+    background-color: #1f9482;
+    max-width: 100%;
+} */
 
 .section_profile-pic{
     display: flex;
@@ -170,6 +177,17 @@ section{
     }
 }
 
+/* .section_profile-pics{
+    display: flex;
+    height: 300px;
+    width: 300px;
+    margin: auto 0;
+
+    img{
+        border-radius: 50%;
+    }
+} */
+
 .section_text{
     align-self: center;
     text-align: center;
@@ -181,6 +199,9 @@ section{
 
 .section_text_p1{
     text-align: center;
+}
+
+.section_text_p2{
     font-size: 1.75rem;
     margin-bottom: 1rem;
 }
@@ -190,9 +211,107 @@ section{
     text-align: center;
 }
 
+.co-title{
+    font-size: 2rem;
+}
+
+.school-container{
+    font-size: 1.5rem;
+}
+
+.school-year{
+    font-size: 0.9rem;
+}
+
 #socials-container{
     display: flex;
     justify-content: center;
     margin-top: 1rem;
     gap: 1rem;
 }
+
+.icon{
+    cursor: pointer;
+    height: 2rem;
+}
+
+/* BUTTONS */
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+
+.btn-color{
+    background-color: #2cd3a1;
+    color: black;
+    border: #2cd3a1;
+}
+
+.btn-color:hover{
+    background: #1f9482;
+    border: #1f9482;
+}
+
+/* ABOUT SECTION */
+
+#about{
+    position: relative;
+}
+
+.about-container{
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about-details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-pic{
+    border-radius: 5rem;
+    width: 300px;
+    height: 300px;
+}
+
+.arrow{
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.details-container{
+    padding: 1rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: #1f9482 solid;
+    border-color:#2cd3a1;
+    text-align: center;
+}
+
