@@ -369,6 +369,7 @@ article .icon{
     border: 1px solid transparent;
     padding: 30px;
     border-radius: 20px;
+    background-color: bisque;
     box-shadow:#2cd3a1 0px 15px 12px;
 }
 
@@ -382,8 +383,8 @@ article .icon{
 .track-art{
     margin: 30px;
     height: 100px;
-    width: 150px;
-    border: 5px solid white;
+    width: 120px;
+    border: 2px solid white;
     background-size: cover;
     background-position: center;
     border-radius: 50%;
@@ -408,6 +409,7 @@ article .icon{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     margin-bottom: 30px;
 }
 
@@ -463,7 +465,7 @@ article .icon{
 }
 
 .seek_slider{
-    width: 40%;
+    width: 50%;
 }
 .volume_slider{
     width: 30%;
@@ -540,4 +542,61 @@ i.fa-step-backward{
 
 .stroke:nth-child(3){
     animation-delay: 0.6s;
+}
+
+
+#music{
+    position: relative;
+    text-align: center;
+    margin: 50px 0;
+}
+
+#music .arrow{
+    position: absolute;
+    right: 3rem; 
+    bottom: 2.5rem;
+}
+
+/* CONTACT */
+
+#contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.contact-info-container{
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: #1f9482 0.1rem solid;
+    background: (250, 250, 250);
+    margin: 10rem auto;
+    padding: 0.5rem;
+}
+
+.info-details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    margin: 1rem;
+}
+
+.info-details p{
+    font-size: larger;
+}
+
+.email-icon, .fb-icon, .linkedin-icon{
+    height: 2.5rem;
+}
+
+footer{
+    height: 26vh;
+    margin: 0 1rem;
+}
+
+footer p{
+    text-align: center;
 }

@@ -30,21 +30,21 @@ let updateTimer;
 
 const music_list = [
     {
-        img:'images/sacrifice.jpg',
-        name: 'Sacrifice (Eat Me Up)',
+        img:'./images/sacrifice.jpg',
+        name: 'Sacrifice',
         artist: 'ENHYPEN',
         music: 'music/ENHYPEN 엔하이픈 Sacrifice Eat Me Up Color Coded Lyrics Eng Rom Han 가사.mp3'
     },
 
     {
-        img:'images/lucifer.jpg',
+        img:'./images/lucifer.jpg',
         name: 'Lucifer',
         artist: 'ENHYPEN',
         music: 'music/Lucifer.mp3'
     },
 
     {
-        img:'images/enhypen-fatal-trouble.jpeg',
+        img:'./images/enhypen-fatal-trouble.jpeg',
         name: 'Fatal Trouble',
         artist: 'ENHYPEN',
         music: 'music/ENHYPEN Fatal Trouble Lyrics 엔하이픈 Fatal Trouble 가사 Color Coded Han_Rom_Eng ShadowByYoongi.mp3'
@@ -58,12 +58,12 @@ function loadTrack(track_index){
     reset();
 
     curr_track.src = music_list[track_index].music;
-    curr_track = load();
+    curr_track.load();
 
     track_art.style.backgroundImage = "url(" + music_list[track_index].img + ")";
     track_name.textContent = music_list[track_index].name;
     track_artist.textContent = music_list[track_index].artist;
-    now_playing.textContent = "Playing music " + (track_index + 1) + "of " + music_list.length;
+    now_playing.textContent = "Playing music " + (track_index + 1) + " of " + music_list.length;
 
     updateTimer = setInterval(setUpdate, 1000);
 
@@ -71,8 +71,8 @@ function loadTrack(track_index){
 }
 
 function reset() {
-    curr_time.textContent = "0.00";
-    total_duration.textContent = "0.00";
+    curr_time.textContent = "00.00";
+    total_duration.textContent = "00.00";
     seek_slider.value = 0;
 }
 
@@ -156,6 +156,18 @@ function setUpdate(){
         seekPosition = curr_track.currentTime * (100 / curr_track.duration);
         seek_slider.value = seekPosition;
 
-        
+        let currentMinutes = Math.floor(curr_track.currentTime / 60);
+        let currentSeconds = Math.floor(curr_track.currentTime - currentMinutes * 60);
+        let durationMinutes = Math.floor(curr_track.duration / 60);
+        let durationSeconds = Math.floor(curr_track.duration - durationMinutes * 60);
+
+        if (currentSeconds < 10) { currentSeconds = "0" + currentSeconds; }
+        if (durationSeconds < 10) { durationSeconds = "0" + durationSeconds; }
+        if (currentMinutes < 10) { currentMinutes = "0" + currentMinutes; }
+        if (durationMinutes < 10) { durationMinutes = "0" + durationMinutes; }
+
+        curr_time.textContent = currentMinutes + ":" + currentSeconds;
+        total_duration.textContent = durationMinutes + ":" + durationSeconds;
     }
-}   
+}
+
