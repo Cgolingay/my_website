@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="myself.css"> 
         <link rel="stylesheet" href="mediaquerries.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     </head>
 
     <body>
@@ -14,7 +16,7 @@
             <div>
                 <div class="nav-links">
                     <li><a href="#about">About</a></li>
-                    <li><a href="#project">Project</a></li>
+                    <li><a href="#languages">Language</a></li>
                     <li><a href="#music">Music</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </div>
@@ -32,7 +34,7 @@
 
                 <div class="menu-links">
                     <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                    <li><a href="#project" onclick="toggleMenu()">Project</a></li>
+                    <li><a href="#languages" onclick="toggleMenu()">Language</a></li>
                     <li><a href="#music" onclick="toggleMenu()">Music</a></li>
                     <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
                 </div>
@@ -105,11 +107,150 @@
                 </div>
             </div>
 
-            <img src="./images/arrow.png" alt="" class="icon arrow" onclick="location.href='./#project'">
+            <img src="./images/arrow.png" alt="" class="icon arrow" onclick="location.href='./#languages'">
         </section>
 
-        <section id="project">
-            <h1 class="title">Projects</h1>
+        <section id="languages">
+            <h1 class="title">Language</h1>
+
+            <div class="language-details">
+                <div class="about-details">
+                    <div class="details-container">
+                        <h2 class="languages-sub-title">Frontend Development</h2>
+
+                        <div class="article-container">
+                            <article>
+                                <img src="./images/check-mark.png" alt="" class="icon">
+                                <div>
+                                    <h3>JAVA</h3>
+                                </div>
+                            </article>
+
+                            <article>
+                                <img src="./images/check-mark.png" alt="" class="icon">
+                                <div>
+                                    <h3>HTML</h3>
+                                </div>
+                            </article>
+
+                            <article>
+                                <img src="./images/check-mark.png" alt="" class="icon">
+                                <div>
+                                    <h3>CSS</h3>
+                                </div>
+                            </article>
+
+                            <article>
+                                <img src="./images/check-mark.png" alt="" class="icon">
+                                <div>
+                                    <h3>JAVASCRIPT</h3>
+                                </div>
+                            </article>
+
+                            <article>
+                                <img src="./images/check-mark.png" alt="" class="icon">
+                                <div>
+                                    <h3>PYTHON</h3>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="language-details">
+                <div class="about-details">
+                    <div class="details-container">
+                        <h2 class="languages-sub-title">Backend Development</h2>
+
+                        <div class="article-container">
+                            <article>
+                                <img src="./images/check-mark.png" alt="" class="icon">
+                                <div>
+                                    <h3>JAVA</h3>
+                                </div>
+                            </article>
+
+                            <article>
+                                <img src="./images/check-mark.png" alt="" class="icon">
+                                <div>
+                                    <h3>PHP</h3>
+                                </div>
+                            </article>
+
+                            <article>
+                                <img src="./images/check-mark.png" alt="" class="icon">
+                                <div>
+                                    <h3>C++</h3>
+                                </div>
+                            </article>
+
+                            <article>
+                                <img src="./images/check-mark.png" alt="" class="icon">
+                                <div>
+                                    <h3>PYTHON</h3>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./images/arrow.png" alt="" class="icon arrow" onclick="location.href='./#music'">
+        </section>
+
+        <section id="music">
+            <h1 class="title">Favorite Songs</h1>
+
+            <div class="player">
+                <div class="wrapper">
+                    <div class="details-music">
+                        <div class="now-playing">PLAYING x OF y</div>
+                        <div class="track-art"></div>
+                        <div class="track-name">Track Name</div>
+                        <div class="track-artist">Track Artist</div>
+                    </div>
+
+                    <div class="slider_container">
+                        <div class="current-time">00.00</div>
+                        <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                        <div class="total_duration">00.00</div>
+                    </div>
+
+                    <div class="slider_container">
+                        <i class="fa fa-volume-down"></i>
+                        <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+                        <i class="fa fa-volume-up"></i>
+                    </div>
+
+                    <div class="button">
+                        <div class="random-track" onclick="randomTrack()">
+                            <i class="fas fa-random fa-1x" title="random"></i>
+                        </div>
+
+                        <div class="prev-track" onclick="prevTrack()">
+                            <i class="fa fa-step-backward fa-1x" ></i>
+                        </div>
+
+                        <div class="playpause-track" onclick="playpauseTrack()">
+                            <i class="fa fa-play-circle fa-2x" ></i>
+                        </div>
+
+                        <div class="next-track" onclick="nextTrack()">
+                            <i class="fa fa-step-forward fa-1x" ></i>
+                        </div>
+
+                        <div class="repeat-track" onclick="repeatTrack()">
+                            <i class="fa fa-repeat fa-1x" title="repeat"></i>
+                        </div>
+                    </div>
+
+                    <div id="wave">
+                        <span class="stroke"></span>
+                        <span class="stroke"></span>
+                        <span class="stroke"></span>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <script src="script.js"></script>

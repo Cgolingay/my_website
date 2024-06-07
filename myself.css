@@ -285,6 +285,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: -5rem;
 }
 
 .about-pic{
@@ -315,3 +316,228 @@ section{
     text-align: center;
 }
 
+/* LANGUAGES */
+
+#languages{
+    position: relative;
+}
+
+.languages-sub-title{
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.language-details{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+.article-container{
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+}
+
+article{
+    display: flex;
+    width: 10rem;
+    justify-content: space-around;
+    gap: 0.5rem;
+}
+
+article .icon{
+    cursor: default;
+}
+
+/* MUSIC */
+
+.player{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wrapper{
+    border: 1px solid transparent;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow:#2cd3a1 0px 15px 12px;
+}
+
+.details-music{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.track-art{
+    margin: 30px;
+    height: 100px;
+    width: 150px;
+    border: 5px solid white;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-shadow: 0px 6px 5px #ccc;
+    border-radius: 190px;
+}
+
+.now-playing{
+    font-size: 1rem;
+}
+
+.track-name{
+    font-size: 2rem;
+}
+
+.track-artist{
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+.button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.active{
+    color: black;
+}
+
+.repeat-track,
+.random-track,
+.playpause-track,
+.prev-track,
+.next-track{
+    padding: 15px;
+    opacity: 0.8;
+    transition: opacity .2s;
+}
+
+.repeat-track:hover,
+.random-track:hover,
+.playpause-track:hover,
+.prev-track:hover,
+.next-track:hover{
+    opacity: 1.0;
+}
+
+.slider_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.seek_slider, .volume_slider{
+    appearance: none;
+    height: 5px;
+    background: #1f9482;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.seek_slider:hover, .volume_slider:hover{
+    opacity: 1.0;
+}
+
+.seek_slider::-webkit-slider-thumb,
+.volume_slider::-webkit-slider-thumb{
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border: 3px solid #2cd3a1;
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+.seek_slider{
+    width: 40%;
+}
+.volume_slider{
+    width: 30%;
+}
+
+.current-time, .total_duration{
+    padding: 10px;
+}
+
+i.fa-volume-down,
+i.fa-volume-up{
+    padding: 10px;
+}
+
+i, 
+i.fa-play-circle,
+i.fa-pause-circle,
+i.fa-step-forward,
+i.fa-step-backward{
+    cursor: pointer;
+}
+
+.randomActive{
+    color: black;
+}
+
+.rotate{
+    animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation{
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(359deg);
+    }
+}
+
+.Loader{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Loader, .stroke{
+    background: #f1f1f1;
+    height: 100px;
+    width: 10px;
+    border-radius: 50px;
+    margin: 0px 20px;
+    animation: animate 1.4s linear infinite;
+}
+
+@keyframes animate {
+    50%{
+        height: 20%;
+        background: #2cd3a1;
+    }
+    100%{
+        height: 100%;
+    }
+}
+
+.stroke:nth-child(1){
+    animation-delay: 0s;
+}
+
+.stroke:nth-child(2){
+    animation-delay: 0.3s;
+}
+
+.stroke:nth-child(3){
+    animation-delay: 0.6s;
+}
