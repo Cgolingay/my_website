@@ -602,3 +602,212 @@ footer{
 footer p{
     text-align: center;
 }
+
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    #hamburger-nav {
+        display: block;
+    }
+
+    section {
+        margin: 0 2rem;
+    }
+
+    #profile {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .section_profile-pic {
+        height: 200px;
+        width: 200px;
+    }
+
+    .section_text_p2 {
+        font-size: 1.5rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .co-title {
+        font-size: 1.5rem;
+    }
+
+    .school-container {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        padding: 0.8rem;
+        width: 6rem;
+    }
+
+    .about-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .details {
+        margin-left: 0;
+    }
+
+    .about-pic {
+        width: 200px;
+        height: 200px;
+    }
+
+    .arrow {
+        right: 1rem;
+        bottom: 1rem;
+    }
+
+    .article-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .wrapper {
+        padding: 15px;
+    }
+
+    .track-art {
+        height: 80px;
+        width: 80px;
+    }
+
+    .track-name {
+        font-size: 1.5rem;
+    }
+
+    .track-artist {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 0.5rem;
+        width: auto;
+    }
+
+    .player {
+        height: auto;
+    }
+
+    .wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    #hamburger-nav {
+        display: block;
+    }
+
+    section {
+        margin: 0 1rem;
+    }
+
+    #profile {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    /* .section_profile-pic {
+        height: 150px;
+        width: 150px;
+    } */
+
+    .section_text_p2 {
+        font-size: 1.25rem;
+    }
+
+    .title {
+        font-size: 1.75rem;
+    }
+
+    .co-title {
+        font-size: 1.25rem;
+    }
+
+    .school-container {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 0.5rem;
+        width: 5rem;
+    }
+
+    .about-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .details {
+        margin-left: 0;
+    }
+
+    .about-pic {
+        width: 150px;
+        height: 150px;
+    }
+
+    .arrow {
+        right: 0.5rem;
+        bottom: 0.5rem;
+    }
+
+    .article-container {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .wrapper {
+        padding: 10px;
+    }
+
+    .track-art {
+        height: 60px;
+        width: 60px;
+    }
+
+    .track-name {
+        font-size: 1.25rem;
+    }
+
+    .track-artist {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        padding: 0.3rem;
+        width: auto;
+    }
+
+    .player {
+        height: auto;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+}
