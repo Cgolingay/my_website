@@ -731,10 +731,10 @@ footer p{
         gap: 1rem;
     }
 
-    /* .section_profile-pic {
+    .section_profile-pic {
         height: 150px;
         width: 150px;
-    } */
+    }
 
     .section_text_p2 {
         font-size: 1.25rem;
