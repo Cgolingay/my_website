@@ -707,6 +707,18 @@ footer p{
     .wrapper {
         width: 90%;
     }
+
+    .info-details p{
+        font-size: 0.7rem;
+    }
+
+    .contact-info-container{
+        width: 90%;
+    }
+
+    .contact-info-container img{
+        font-size: smaller;
+    }
 }
 
 @media (max-width: 100px) {
@@ -810,5 +822,17 @@ footer p{
 
     .wrapper {
         width: 100%;
+    }
+
+    .info-details p{
+        font-size: 0.5rem;
+    }
+
+    .contact-info-container{
+        width: 100%;
+    }
+
+    .contact-info-container img{
+        font-size: smaller;
     }
 }
