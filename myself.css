@@ -619,12 +619,13 @@ footer p{
     }
 
     section {
-        margin: 0 2rem;
+        margin: 0;
     }
 
     #profile {
-        flex-direction: column;
+        /* flex-direction: column; */
         gap: 2rem;
+        display: flex;
     }
 
     .section_profile-pic {
