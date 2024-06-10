@@ -604,7 +604,7 @@ footer p{
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     nav {
         flex-direction: column;
         height: auto;
@@ -709,7 +709,7 @@ footer p{
     }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 100px) {
     nav {
         flex-direction: column;
         height: auto;
