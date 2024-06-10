@@ -629,16 +629,16 @@ footer p{
     }
 
     .section_profile-pic {
-        height: 200px;
-        width: 200px;
+        height: 150px;
+        width: 150px;
     }
 
     .section_text_p2 {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .title {
-        font-size: 2rem;
+        font-size: 1.3rem;
     }
 
     .co-title {
@@ -733,16 +733,16 @@ footer p{
     }
 
     .section_profile-pic {
-        height: 150px;
-        width: 150px;
+        height: 100px;
+        width: 100px;
     }
 
     .section_text_p2 {
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
 
     .title {
-        font-size: 1.75rem;
+        font-size: 1.3rem;
     }
 
     .co-title {
